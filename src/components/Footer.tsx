@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { Button } from '@/components/ui/button';
 import cloudyLogo from '@/assets/cloudy-logo.png';
 
 export function Footer() {
@@ -96,6 +97,17 @@ export function Footer() {
               ))}
             </ul>
           </div>
+        </div>
+
+        {/* Platform Button */}
+        <div className="text-center mb-12">
+          <Button 
+            size="lg" 
+            className="bg-gradient-primary text-white hover:bg-gradient-primary/90 px-8 py-3 text-lg font-semibold"
+            onClick={() => window.open('https://www.cloudy2.uk', '_blank')}
+          >
+            Go To The Platform
+          </Button>
         </div>
 
         {/* Footer Bottom */}
